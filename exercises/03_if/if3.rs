@@ -2,7 +2,7 @@
 //
 // Execute `rustlings hint if3` or use the `hint` watch subcommand for a hint.
 
-// I AM NOT DONE
+
 
 pub fn animal_habitat(animal: &str) -> &'static str {
     let identifier = if animal == "crab" {
@@ -14,6 +14,18 @@ pub fn animal_habitat(animal: &str) -> &'static str {
     } else {
         0
     };
+    //  enum AnimalType {
+    //     Crab = 1,
+    //     Gopher = 2,
+    //     Snake =3,
+    //  }
+
+    //  let identifier = match animal {
+    //     "crab" => AnimalType::Crab as i32,
+    //     "gopher" => AnimalType::Gopher as i32,
+    //     "snake" => AnimalType::Snake as i32,
+    //     _ => 0,
+    //  };
 
     // DO NOT CHANGE THIS STATEMENT BELOW
     let habitat = if identifier == 1 {
