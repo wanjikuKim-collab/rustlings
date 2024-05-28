@@ -9,9 +9,10 @@
 
 struct ColorClassicStruct {
     // TODO: Something goes here
+    
 }
 
-struct ColorTupleStruct(/* TODO: Something goes here */);
+struct ColorTupleStruct(/* TODO: Something goes here */ i32, i32, i32);
 
 #[derive(Debug)]
 struct UnitLikeStruct;
@@ -33,7 +34,7 @@ mod tests {
     #[test]
     fn tuple_structs() {
         // TODO: Instantiate a tuple struct!
-        // let green =
+        let green = (0, 255, 0);
 
         assert_eq!(green.0, 0);
         assert_eq!(green.1, 255);
